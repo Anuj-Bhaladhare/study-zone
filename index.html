@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css">
     <title>Study Zone</title>
 </head>
 <body>
@@ -11,7 +12,7 @@
     <div>
 
         <!-- ================================== NAVBAAR ================================= -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-evenly">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light navbaar-container">
     
                 <a class="navbar-brand" href="#">Study Zone</a>
     
@@ -57,61 +58,113 @@
                         </li>
                     </ul>
                 </div>
-                <!-- <i class="fa fa-moon-o" aria-hidden="true"></i> -->
             </nav>
     
         <!-- ================================== MAIN CONTENT ================================= -->
         <div class="container mt-5">
-            <div class="row d-flex justify-content-evenly">
+            <div class="row main-content">
                 <div class="col-sm-6 col-md-4 col-lg-3">
                     <h1>Welcome to Study Zone</h1>
                     <p>This is a responsive Bootstrap navigation bar example.</p>
                 </div>
                 <div class="col-sm-6 col-md-4 col-lg-3">
-                    <img src="./images/main-img.png" class="img-fluid" alt="Study Zone">
+                    <img src="./images/main-img.png" class="img-fluid main-img" alt="Study Zone">
                 </div>
             </div>
         </div>
         
-    
-        <!-- ================================== FOOTER ================================= -->
-            <div class="container mt-5">
-                <h1>FOOTER</h1>
-                <div class="row">
-                    <div class="col-sm-6 col-md-4 col-lg-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Card 1</h5>
-                                <p class="card-text">This is a card content for demonstration purposes.</p>
-                            </div>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Card 1</h5>
+                            <p class="card-text">This is a card content for demonstration purposes.</p>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Card 2</h5>
-                                <p class="card-text">This is another card content for demonstration purposes.</p>
-                            </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Card 2</h5>
+                            <p class="card-text">This is another card content for demonstration purposes.</p>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Card 3</h5>
-                                <p class="card-text">Yet another card content for demonstration purposes.</p>
-                            </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Card 3</h5>
+                            <p class="card-text">Yet another card content for demonstration purposes.</p>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Card 4</h5>
-                                <p class="card-text">One more card content for demonstration purposes.</p>
-                            </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Card 4</h5>
+                            <p class="card-text">One more card content for demonstration purposes.</p>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Card 1</h5>
+                            <p class="card-text">This is a card content for demonstration purposes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Card 2</h5>
+                            <p class="card-text">This is another card content for demonstration purposes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Card 3</h5>
+                            <p class="card-text">Yet another card content for demonstration purposes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Card 4</h5>
+                            <p class="card-text">One more card content for demonstration purposes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- ================================== FOOTER ================================= -->
+        <footer class="bg-dark text-light mt-5 py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>Contact Us</h3>
+                        <p>Email: info@example.com</p>
+                        <p>Phone: +123 456 7890</p>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Follow Us</h3>
+                        <a href="#" class="text-light me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
             
     </div>
 
@@ -122,3 +175,8 @@
 
 </body>
 </html>
+
+
+
+<!-- ======================================================================================== -->
+
