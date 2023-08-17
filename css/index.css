@@ -1,0 +1,39 @@
+
+/* $grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+); */
+
+@include media-breakpoint-up(sm) {
+  .custom-class {
+    display: block;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .custom-class {
+    display: block;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .custom-class {
+    display: block;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .custom-class {
+    display: block;
+  }
+}
+
+@include media-breakpoint-up(xxl) {
+  .custom-class {
+    display: block;
+  }
+}
