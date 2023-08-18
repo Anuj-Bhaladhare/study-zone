@@ -140,8 +140,17 @@ const getData = document.querySelector(".example");
 
 allData.forEach((key) => {
 getData.innerHTML += `
-     <p>${key.title}</p>
-     <p>${key.description}</p>
-     <img height='200px' src='${key.image}'>
+    <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+            <div class="card-body">
+                <p>${key.title}</p>
+                <img class='img-fluid' src='${key.image}'>
+                <p>${key.description}</p>
+            </div>
+        </div>
+    </div>
   `;
 });
+
+
+
