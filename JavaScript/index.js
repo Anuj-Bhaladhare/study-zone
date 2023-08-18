@@ -22,7 +22,7 @@ counterNum(759, getvalue4);
 
 
 
-const allData = [
+const allCourses = [
     {
         id: "WD101",
         title: "Web Development Fundamentals",
@@ -135,30 +135,52 @@ const allData = [
     },
 ];
 
-const getData = document.querySelector(".example");
+const coursesCard = document.querySelector(".example");
 let enroll = true; 
+let dashboardList = [];
 
-allData.forEach((key) => {
-    getData.innerHTML += `
-        <div class="col-sm-6 col-md-6 col-lg-4 mt-5">
-            <div class="card">
-                <div class="card-body">
-                    <p>${key.title}</p>
-                    <img class='img-fluid' src='${key.image}'>
-                    <p>${key.description}</p>
-                    <div>
-                        ${
-                            enroll
-                                ? '<button type="button" class="btn btn-primary">Enroll Free</button>'
-                                : '<button type="button" class="btn btn-primary">Check Your Dashboard</button>'
-                        }
+const setvalue = () => {
+    if(enroll == true){
+        enroll = false;
+    }
+    else{
+        enroll = false;
+    }
+}
+
+const initApp = () => {
+    allCourses.forEach((key) => {
+        coursesCard.innerHTML += `
+            <div class="col-sm-6 col-md-6 col-lg-4 mt-5">
+                <div class="card">
+                    <div class="card-body">
+                        <p>${key.title}</p>
+                        <img class='img-fluid' src='${key.image}'>
+                        <p>${key.description}</p>
+                        <div>
+                            ${
+                                enroll
+                                    ? ('<button onClick="setvalue()" type="button" class="btn btn-primary">Enroll Free</button>')
+                                    : ('<button type="button" class="btn btn-primary">Check Your Dashboard</button>')
+                            }
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    `;
-});
+        `;
+    });
+}
 
+initApp();
 
+const addToDashboard = (key) => {
+    if(dashboardList[key] == null){
+        dashboardList[key] = allCourses[key];
+        dashboardList[key].quantity = 1;
+    }
+    relatedDashboard();
+}
 
+const relatedDashboard = () => {
 
+}
